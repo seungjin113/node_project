@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <style>
+            *{
+            margin: 0 auto;
+        }
+        body{
+            background: url(../img/bg.png);
+            
+            
+        }
+        h1{
+            width: 300px;
+            height: 100px;
+            background-color: bisque;
+            text-align: center;
+            line-height: 100px;
+            margin-top: 80px;
+            border-bottom: 1px double #333;
+            border-radius: 20px;
+            box-shadow:5px 5px 5px 5px #333;
+        }
+        fieldset{
+            background-color: antiquewhite;
+            width: 800px;
+            border-radius: 20px;
+            margin-top: 80px;
+            height: 400px;
+            box-shadow:5px 5px 5px 5px #333;
+        }
+        table{
+            line-height: 50px;
+        }
+        span{
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .score{
+            width: 170px;
+        }
+        .sub    {
+            margin-left: 390px;
+            background-color: #333;
+            color: #ccc;
+            border-radius: 10px;
+            padding: 5px;
+
+        }
+        .sub:hover{
+            cursor: pointer;
+            background-color: rgb(160, 204, 116);
+            color: #333;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>새로운 여행지</h1>
+    <form method="post">
+        <fieldset>
+            <legend><span>메모 생성</span></legend>
+            <table>
+                <!-- <tr>
+                    <td><label>번호</label></td>
+                    <td><input type="text" name="number"></td>
+                </tr> -->
+                <tr>
+                    <td><label>지역</label></td>
+                    <td><input type="text" name="area"></td>
+                </tr>
+                <tr>
+                    <td><label>장소</label></td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label>주소</label></td>
+                    <td><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td><label>시간</label></td>
+                    <td><input type="date" name="time"></td>
+                </tr>
+                <tr>
+                    <td><label>여행지 점수</label></td>
+                    <td>
+                     <input class="score" type="number" name="score" min="1" max="5">   
+                    </td>
+                </tr>
+            </table>
+            <input class="sub" type="submit" value="추가">
+        </fieldset>
+    </form>
+</body>
+</html>

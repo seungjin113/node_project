@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto;
+        }
+        body{
+            background: url(../img/bg.png);
+            
+            
+        }
+        h1{
+            width: 300px;
+            height: 100px;
+            background-color: bisque;
+            text-align: center;
+            line-height: 100px;
+            margin-top: 80px;
+            border-bottom: 1px double #333;
+            border-radius: 20px;
+            box-shadow:5px 5px 5px 5px #333;
+        }
+        
+        fieldset{
+            background-color: antiquewhite;
+            width: 800px;
+            border-radius: 20px;
+            margin-top: 80px;
+            height: 400px;
+            box-shadow:5px 5px 5px 5px #333;
+        }
+        table{
+            line-height: 50px;
+        }
+        .sub    {
+            margin-left: 390px;
+            background-color: #333;
+            color: #ccc;
+            border-radius: 10px;
+            padding: 5px;
+
+        }
+        .sub:hover{
+            cursor: pointer;
+            background-color: rgb(160, 204, 116);
+            color: #333;
+        }
+        span{
+            width: 80px;
+            height: 30px;
+            font-size: x-large;
+            font-weight: bold;
+            border-radius: 5px;
+            opacity: 0.9;
+        }
+   
+    </style>
+</head>
+<body>
+    <h1>수정페이지 </h1>
+    <form method="post">
+    <fieldset>
+        <legend><span>메모수정</span></legend>
+        <table>
+            <!-- <tr>
+                <td><label>번호</label></td>
+                <td><input type="text"name='number' value="<%=data.number%>"></td>
+            </tr> -->
+            <tr>
+                <td><label>지역</label></td>
+                <td><input type="text"name='area' value="<%=data.area%>"></td>
+            </tr>
+            <tr>
+                <td><label>장소</label></td>
+                <td><input type="text"name='name' value="<%=data.name%>"></td>
+            </tr>
+            <tr>
+                <td><label>주소</label></td>
+                <td><input type="text"name='address' value="<%=data.address%>"></td>
+            </tr>
+            <tr>
+                <td><label>시간</label></td>
+                <td><input type="text"  name='time' value="<%=data.time%>"></td>
+            </tr>
+            <tr>
+                <td><label>점수</label></td>
+                <td><input type="text"name='score'  value="<%=data.score%>"></td>
+            </tr>
+        </table>
+      <input class="sub" type="submit" value="수정">  
+    </fieldset>
+  
+</form> 
+</body>
+</html>
